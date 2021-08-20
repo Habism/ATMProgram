@@ -83,9 +83,9 @@ namespace ATMProgram
                     Console.WriteLine("Enter the amount to withdraw: ");
                     isWithdraw = Int32.Parse(Console.ReadLine());
 
-                    if (isWithdraw % 10 != 0)
+                    if (isWithdraw % 100 != 0)
                     {
-                        Console.WriteLine("Please Enter the amount in multiples of 10");
+                        Console.WriteLine("Please Enter the amount in multiples of 100");
                     }
                     else if (isWithdraw > isBalance)
                     {
